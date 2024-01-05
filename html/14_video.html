@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- src - 비디오 주소 -->
+    <!-- controls - 비디오 관련된 재생, 멈춤, 음성 등 조정을 위한 UI가 제공 -->
+    <!-- autoplay - 자동실행 -->
+    <!-- muted - 음소거 -->
+    <!-- loop - 반복 재생 -->
+    <!-- poster - 영상 실행전 보이는 썸네일 이미지 -->
+    <!-- preload - auto, metadata, none -->
+    <!-- auto - 사용자가 영상을 시청하든 안하든 영상을 미리 다운로드. -->
+    <!-- metadata - 영상을 다운로드 하지 않고, 영상 상영 시간과 같은 메타 정보만 미리 가져옴 -->
+    <!-- none - 영상 다운로드 하지 않고, 사용자가 영상을 바로 보지 않을 확률이 매우 높은 것. 서버가 최소한의 트래픽을 필요로 할 때 -->
+    <video
+      src="비디오 주소 경로"
+      poseter="이미지 주소 경로"
+      controls
+      autoplay
+      muted
+      loop
+    ></video>
+    <br />
+    <video src="">
+      <track
+        src="자막 주소 경로"
+        kind="subtitles"
+        srclang="en"
+        label="영어(English)"
+      />
+      <track
+        src="자막 주소 경로"
+        kind="subtitles"
+        srclang="ko"
+        label="한국어(Korean)"
+      />
+    </video>
+  </body>
+</html>
